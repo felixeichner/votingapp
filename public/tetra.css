@@ -1,0 +1,106 @@
+/* General */
+
+body {
+	margin: 0;
+	background-color: rgb(196, 196, 196);
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: rgb(43, 43, 43);
+}
+
+h2 {
+	margin: 1rem 0;
+}
+
+h4 {
+	margin: 0.5rem 0;
+}
+
+/* App Layout */
+
+.layout_header {
+	padding: 0.5rem 0;
+	background-color: rgb(43, 43, 43);
+	color: rgb(216, 216, 216);
+	text-align: center;
+}
+
+.container {
+	margin: 2rem;
+	border-radius: 5px;
+	background-color: rgb(218, 218, 218);
+	padding: 2rem;
+}
+
+/* VoteSummary */
+
+.vote_card {
+	padding: 0 1rem 1rem 1rem;
+	background-color: rgb(109, 172, 255);
+	border-radius: 5px;
+	margin-bottom: 1rem;
+}
+
+.vote_header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.vote__votes {
+	background-color: rgb(0, 145, 189);
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	align-self: center;
+}
+
+.vote_divider {
+	margin: 0;
+}
+
+.new_vote_divider {
+	margin: 2rem 0;
+}
+
+.vote_body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+/* Choice Bar */
+
+.choice-bar {
+	margin-top: 2rem;
+	background-color: rgb(0, 145, 189);
+	border-radius: 0.5rem;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.choice-bar__progress {
+	height: inherit;
+	background-color: rgb(4, 55, 114);
+	border-radius: 0.5rem;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.choice-bar__title {
+	margin: 0.5rem 0 0.5rem 2rem;
+	color: rgb(206, 202, 182);
+	font-size: 1.5rem;
+	font-weight: bold;
+	align-self: center;
+	z-index: 2;
+}
+
+.choice-bar__badge {
+	margin: 0.5rem 2rem 0.5rem 0;
+	padding: 0.2rem 0.7rem;
+	background-color: rgb(206, 202, 182);
+	border-radius: 3px;
+	z-index: 2;
+}
