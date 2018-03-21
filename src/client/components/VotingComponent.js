@@ -21,5 +21,6 @@ export default function VotingComponent ({ choices, onRegisterVote }) {
 }
 
 VotingComponent.propTypes = {
-  choices: React.PropTypes.array.isRequired
+  choices: React.PropTypes.array.isRequired,
+  onRegisterVote: React.PropTypes.func.isRequired
 }

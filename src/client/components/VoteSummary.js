@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function VoteSummary(
-  { title, description, choices, currentVoteId, onSelectVote }) {
+  { title, description = "", choices, onSelectVote }) {
   const totalVotes = choices.reduce((prev, curr) => prev + curr.count, 0);
   return (
     <div className="vote_summary" onClick={onSelectVote}>
@@ -12,4 +12,11 @@ export default function VoteSummary(
       <h4 className="vote__subtitle">{description}</h4>
     </div>
   );
+}
+
+VoteSummary.propTypes = {
+  title: React.PropTypes.string.isRequired,
+  description: React.PropTypes.string,
+  choices: React.PropTypes.array.isRequired,
+  onSelectVote: React.PropTypes.func.isRequired
 }

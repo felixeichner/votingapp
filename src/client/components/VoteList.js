@@ -9,7 +9,6 @@ export default function VoteList({votes, currentVoteId, onSelectVote, onRegister
         <div key={vote.id} className="vote_card">
           <VoteSummary
             {...vote}
-            currentVoteId={currentVoteId}
             onSelectVote={() => onSelectVote(vote)}
           />
           { currentVoteId === vote.id ? 
@@ -22,4 +21,11 @@ export default function VoteList({votes, currentVoteId, onSelectVote, onRegister
       )}
     </div>
   )
+}
+
+VoteList.propTypes = {
+  votes: React.PropTypes.array.isRequired,
+  currentVoteId: React.PropTypes.string.isRequired,
+  onSelectVote: React.PropTypes.func.isRequired,
+  onRegisterVote: React.PropTypes.func.isRequired
 }

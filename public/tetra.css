@@ -132,3 +132,12 @@ h4 {
 	box-shadow: 0 0 3px 2px rgb(4, 55, 114);
 	outline: none;
 }
+
+.error_message {
+	color: red;
+	font-weight: bold;
+}
+
+.error_field {
+	outline: red;
+}
